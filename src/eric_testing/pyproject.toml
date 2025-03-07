@@ -97,7 +97,8 @@ dependencies = [
 [project.urls]
 
 [project.scripts]
-multi-tool = "inspect_multi_tool._cli.main:main"
+multi-tool =                  "inspect_multi_tool._cli.main:main"
+multi-tool-playwright-setup = "inspect_multi_tool._cli._playwright_setup:main"
 
 [project.optional-dependencies]
 
