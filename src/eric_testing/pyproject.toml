@@ -4,10 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["inspect_multi_tool*"]
+include = ["inspect_multi_tool*", "sitecustomize"]
 
 [tool.setuptools.package-data]
 "inspect_multi_tool" = ["**/*.svg", "**/*.md"]
+"sitecustomize" = ["*"]
 
 
 [tool.ruff]
