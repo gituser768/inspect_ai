@@ -2,12 +2,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Debug multi_tool_v1.py",
+      "name": "Python: Debug multi_tool cli",
       "type": "python",
       "request": "launch",
-      "module": "multi_tool_v1",
+      "module": "inspect_multi_tool",
       "console": "integratedTerminal",
-      "cwd": "${workspaceFolder}/src/multi_tool",
+      "cwd": "${workspaceFolder}/src/eric_testing/src",
       "args": ["${input:requestArg}"]
     },
     {
