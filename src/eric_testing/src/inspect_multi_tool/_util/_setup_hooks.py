@@ -4,12 +4,8 @@ import os
 import subprocess
 import sys
 
-from setuptools import setup
 from setuptools.command.develop import develop
 from setuptools.command.install import install
-
-# Allow imports from the local package during the build process
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "src")))
 
 
 def _install_playwright_dependencies():
@@ -47,11 +43,3 @@ class PostDevelopCommand(develop):
             print(
                 "You may need to run 'playwright install' and 'playwright install-deps' manually after installation"
             )
-
-
-setup(
-    cmdclass={
-        "install": PostInstallCommand,
-        "develop": PostDevelopCommand,
-    },
-)
