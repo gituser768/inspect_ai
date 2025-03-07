@@ -9,10 +9,6 @@ include = ["inspect_multi_tool*"]
 [tool.setuptools.package-data]
 "inspect_multi_tool" = ["**/*.svg", "**/*.md"]
 
-[tool.setuptools.cmdclass]
-install = "inspect_multi_tool._util._setup_hooks.PostInstallCommand"
-develop = "inspect_multi_tool._util._setup_hooks.PostDevelopCommand"
-
 
 [tool.ruff]
 extend-exclude = ["docs"]
@@ -102,6 +98,7 @@ dependencies = [
 
 [project.scripts]
 multi-tool = "inspect_multi_tool._cli.main:main"
+playwright-setup = "inspect_multi_tool._util._playwright_setup:main"
 
 [project.optional-dependencies]
 
