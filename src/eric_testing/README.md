@@ -14,6 +14,16 @@ pip install .
 pip install -e src/multi_tool/
 ```
 
+### Playwright Setup
+
+Playwright browsers and system dependencies are automatically installed during package installation.
+
+The installation process runs the following commands:
+- `playwright install` - installs required browsers
+- `playwright install-deps` - installs system dependencies
+
+No manual setup is required.
+
 ## Usage
 
 Once installed, you can use the command-line tool to invoke JSON-RPC methods:
